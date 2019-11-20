@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp.views import sayhello, hello4, jquerytest
+from myapp.views import sayhello, hello4, jquerytest, bootstraptest
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello3/<str:username>', sayhello),
     path('hello4/<str:username>', hello4),
-    path('jquerytest/', jquerytest)
+    path('jquerytest/', jquerytest),
+    path('bootstraptest/', bootstraptest),
 ]

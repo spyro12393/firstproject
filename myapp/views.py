@@ -12,3 +12,6 @@ def hello4(request, username):
 
 def jquerytest(request):
     return render(request, 'jquerytest.html', locals())
+
+def bootstraptest(request):
+    return render(request, 'bootstraptest.html', {})
