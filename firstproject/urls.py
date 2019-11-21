@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp.views import sayhello, hello4, jquerytest, bootstraptest
+from myapp.views import sayhello, hello4, jquerytest, bootstraptest, welcome
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +23,5 @@ urlpatterns = [
     path('hello4/<str:username>', hello4),
     path('jquerytest/', jquerytest),
     path('bootstraptest/', bootstraptest),
+    path('welcome/', welcome),
 ]

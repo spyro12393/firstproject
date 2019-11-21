@@ -15,3 +15,6 @@ def jquerytest(request):
 
 def bootstraptest(request):
     return render(request, 'bootstraptest.html', {})
+
+def welcome(request):
+    return render(request, "welcome.html", locals())
